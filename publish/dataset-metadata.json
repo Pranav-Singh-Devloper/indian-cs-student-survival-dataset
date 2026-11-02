@@ -1,0 +1,14 @@
+{
+  "title": "Desi CS Student Survival Dataset",
+  "id": "KAGGLE_USER/desi-cs-student-survival",
+  "subtitle": "Synthetic, funny dataset on hostel, mess, backlogs & placements of Indian CS students",
+  "description": "10,000 synthetic Indian CS students x 59 features (hostel, mess reviews, chai, maggi, bunking, CGPA, LeetCode, burnout, placements) plus 48k rows of semester-wise SGPA history and 7 hidden student personas. Designed to practise classic ML: regression, classification, clustering, PCA, NLP, time series, imbalance, missing data and fairness. 100% synthetic - see DATA_DICTIONARY.md and the generator script.",
+  "licenses": [{"name": "CC0-1.0"}],
+  "keywords": ["education", "india", "students", "beginner", "classification", "regression", "clustering", "nlp", "tabular", "humor"],
+  "resources": [
+    {"path": "students.csv", "description": "One row per student (10,000 x 59)"},
+    {"path": "semester_records.csv", "description": "Semester-wise SGPA, backlogs and attendance (long format)"},
+    {"path": "DATA_DICTIONARY.md", "description": "Column descriptions and leakage warnings"},
+    {"path": "generate_dataset.py", "description": "Seeded generator script"}
+  ]
+}
