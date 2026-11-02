@@ -1,0 +1,15 @@
+{
+  "id": "pranavsinghdeveloper/clustering-the-7-hidden-student-personas",
+  "title": "Clustering the 7 Hidden Student Personas",
+  "code_file": "personas-clustering.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "false",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [
+    "pranavsinghdeveloper/desi-cs-student-survival"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
