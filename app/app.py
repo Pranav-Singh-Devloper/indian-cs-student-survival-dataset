@@ -4,7 +4,7 @@ import numpy as np, pandas as pd, streamlit as st
 from sklearn.ensemble import GradientBoostingClassifier
 
 st.set_page_config(page_title="Will I get placed?", page_icon="🎒")
-DATA = next(p for p in [Path(__file__).parent / "students.csv", Path(__file__).parent.parent / "data" / "students.csv"] if p.exists())
+DATA = next(p for p in [Path("students_final.csv"), Path(__file__).parent / "students.csv", Path(__file__).parent.parent / "data" / "students.csv"] if p.exists())
 
 FEATURES = ["cgpa", "leetcode_solved", "internships", "backlogs", "projects_built", "communication_skill",
             "hackathons_attended", "college_tier"]
