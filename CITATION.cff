@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Desi CS Student Survival Dataset"
+type: dataset
+authors:
+  - family-names: Singh
+    given-names: Pranav
+date-released: 2026-11-02
+license: CC0-1.0
+repository-code: "https://github.com/Pranav-Singh-Devloper/desi-cs-student-survival-dataset"
+url: "https://huggingface.co/datasets/pranav-singh-developer-1/desi-cs-student-survival"
+keywords: [synthetic data, education, India, machine learning, tabular, students, placements]
+abstract: "A synthetic, humorous dataset of 10,000 Indian CS students (hostel, mess, bunking, backlogs, CGPA, placements) for practising classical machine learning."
