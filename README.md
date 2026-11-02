@@ -68,7 +68,9 @@ sems     = pd.read_csv("data/semester_records.csv")
 final    = students[students.year_of_study == 4]      # placement columns exist only here
 ```
 
-Hugging Face: `load_dataset("pranav-singh-developer/desi-cs-student-survival")` · Kaggle: `pranavsingh/desi-cs-student-survival` *(see links in repo description)*
+🤗 [Hugging Face](https://huggingface.co/datasets/pranav-singh-developer-1/desi-cs-student-survival) · `load_dataset("pranav-singh-developer-1/desi-cs-student-survival", "students")`
+
+📊 [Kaggle](https://www.kaggle.com/datasets/pranavsinghdeveloper/desi-cs-student-survival)
 
 ```bash
 pip install pandas numpy scikit-learn
