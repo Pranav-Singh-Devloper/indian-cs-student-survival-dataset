@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 : "${KAGGLE_USER:?set KAGGLE_USER to your Kaggle username}"
 STAGE=kaggle_stage; rm -rf "$STAGE"; mkdir "$STAGE"
 cp data/students.csv data/semester_records.csv DATA_DICTIONARY.md src/generate_dataset.py "$STAGE"/
-sed "s#KAGGLE_USER#$KAGGLE_USER#" publish/dataset-metadata.json > "$STAGE/dataset-metadata.json"
+python3 publish/build_metadata.py "$KAGGLE_USER" "$STAGE"
 if [ "${1:-new}" = "new" ]; then
   kaggle datasets create -p "$STAGE" --dir-mode zip
 else
