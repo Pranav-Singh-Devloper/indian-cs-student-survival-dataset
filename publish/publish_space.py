@@ -36,7 +36,7 @@ sdk: static
 pinned: false
 license: cc0-1.0
 ---
-A just-for-fun demo on the 100% synthetic Desi CS Student Survival Dataset. Runs entirely in your browser.
+A just-for-fun demo on the 100% synthetic Indian CS Student Survival Dataset. Runs entirely in your browser.
 """)
 api = HfApi(); api.create_repo(repo_id, repo_type="space", space_sdk="static", exist_ok=True)
 api.upload_folder(folder_path=str(st), repo_id=repo_id, repo_type="space", commit_message="Static stlite demo")

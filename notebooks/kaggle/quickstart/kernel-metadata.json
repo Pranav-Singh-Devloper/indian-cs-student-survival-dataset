@@ -1,7 +1,7 @@
 {
   "id": "pranavsinghdeveloper/desi-cs-student-survival-quickstart-and-eda",
-  "title": "Desi CS Student Survival - Quickstart and EDA",
-  "code_file": "desi-cs-student-survival-quickstart.ipynb",
+  "title": "Indian CS Student Survival - Quickstart and EDA",
+  "code_file": "indian-cs-student-survival-quickstart.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": "false",

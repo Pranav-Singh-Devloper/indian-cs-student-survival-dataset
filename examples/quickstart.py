@@ -1,4 +1,4 @@
-"""Baselines across classic ML tasks on the Desi CS Student Survival Dataset.
+"""Baselines across classic ML tasks on the Indian CS Student Survival Dataset.
 Run from repo root:  python examples/quickstart.py
 """
 import warnings

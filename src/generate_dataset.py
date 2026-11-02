@@ -1,5 +1,5 @@
 """
-Generator for the Desi CS Student Survival Dataset.
+Generator for the Indian CS Student Survival Dataset.
 
 Everything here is SYNTHETIC. No real student is in this data.
 The data is produced from a small causal story:

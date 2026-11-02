@@ -1,4 +1,4 @@
-"""🎒 Will I get placed? — playful demo built on the Desi CS Student Survival Dataset (synthetic!)."""
+"""🎒 Will I get placed? — playful demo built on the Indian CS Student Survival Dataset (synthetic!)."""
 from pathlib import Path
 import numpy as np, pandas as pd, streamlit as st
 from sklearn.ensemble import GradientBoostingClassifier
@@ -37,6 +37,6 @@ st.write("🔥 Offer letter incoming." if p > .8 else "🤞 Decent odds. Keep gr
 peers = (d.placed == "Yes").groupby(pd.cut(d.cgpa, [0, 6, 7, 8, 10])).mean().round(2)
 st.subheader("Placement rate by CGPA band (final-years)")
 st.bar_chart(peers.rename(index=str))
-st.markdown("[Dataset on Hugging Face](https://huggingface.co/datasets/pranav-singh-developer-1/desi-cs-student-survival) · "
+st.markdown("[Dataset on Hugging Face](https://huggingface.co/datasets/pranav-singh-developer-1/indian-cs-student-survival) · "
             "[Kaggle](https://www.kaggle.com/datasets/pranavsinghdeveloper/desi-cs-student-survival) · "
-            "[GitHub](https://github.com/Pranav-Singh-Devloper/desi-cs-student-survival-dataset)")
+            "[GitHub](https://github.com/Pranav-Singh-Devloper/indian-cs-student-survival-dataset)")

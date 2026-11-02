@@ -1,6 +1,6 @@
-# 🎒 Desi CS Student Survival Dataset
+# 🎒 Indian CS Student Survival Dataset
 
-[![License: CC0](https://img.shields.io/badge/license-CC0--1.0-blue)](LICENSE) [![Kaggle](https://img.shields.io/badge/Kaggle-dataset-20BEFF?logo=kaggle)](https://www.kaggle.com/datasets/pranavsinghdeveloper/desi-cs-student-survival) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-dataset-yellow)](https://huggingface.co/datasets/pranav-singh-developer-1/desi-cs-student-survival) [![Demo](https://img.shields.io/badge/demo-Will%20I%20get%20placed%3F-orange)](https://huggingface.co/spaces/pranav-singh-developer-1/will-i-get-placed) ![Synthetic](https://img.shields.io/badge/data-100%25%20synthetic-success)
+[![License: CC0](https://img.shields.io/badge/license-CC0--1.0-blue)](LICENSE) [![Kaggle](https://img.shields.io/badge/Kaggle-dataset-20BEFF?logo=kaggle)](https://www.kaggle.com/datasets/pranavsinghdeveloper/desi-cs-student-survival) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-dataset-yellow)](https://huggingface.co/datasets/pranav-singh-developer-1/indian-cs-student-survival) [![Demo](https://img.shields.io/badge/demo-Will%20I%20get%20placed%3F-orange)](https://huggingface.co/spaces/pranav-singh-developer-1/will-i-get-placed) ![Synthetic](https://img.shields.io/badge/data-100%25%20synthetic-success)
 
 > *A synthetic, funny, quirky and painfully relatable dataset about life as an Indian Computer Science student — hostel, mess, bunking, backlogs, LeetCode guilt, CGPA anxiety and placement season.*
 
@@ -78,7 +78,7 @@ sems     = pd.read_csv("data/semester_records.csv")
 final    = students[students.year_of_study == 4]      # placement columns exist only here
 ```
 
-🤗 [Hugging Face](https://huggingface.co/datasets/pranav-singh-developer-1/desi-cs-student-survival) · `load_dataset("pranav-singh-developer-1/desi-cs-student-survival", "students")`
+🤗 [Hugging Face](https://huggingface.co/datasets/pranav-singh-developer-1/indian-cs-student-survival) · `load_dataset("pranav-singh-developer-1/indian-cs-student-survival", "students")`
 
 📊 [Kaggle](https://www.kaggle.com/datasets/pranavsinghdeveloper/desi-cs-student-survival)
 
