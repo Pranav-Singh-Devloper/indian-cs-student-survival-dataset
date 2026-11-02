@@ -30,6 +30,14 @@
     {
       "path": "generate_dataset.py",
       "description": "Seeded generator script"
+    },
+    {
+      "path": "splits.csv",
+      "description": "Fixed 80/20 train/test split (student_id, split)"
+    },
+    {
+      "path": "CHALLENGES.md",
+      "description": "Seven ML challenges, baselines and evaluation instructions"
     }
   ]
 }

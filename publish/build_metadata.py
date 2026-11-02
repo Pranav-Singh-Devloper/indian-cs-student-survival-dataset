@@ -47,6 +47,7 @@ meta["description"] = (meta["description"] + "\n\n## Provenance\nEntirely synthe
 res = {r["path"]: r for r in meta["resources"]}
 res["students.csv"]["schema"] = {"fields": fields(root / "data/students.csv", sd)}
 res["semester_records.csv"]["schema"] = {"fields": fields(root / "data/semester_records.csv", sm)}
+res["splits.csv"]["schema"] = {"fields": [{"name": "student_id", "description": "Join key to students.csv", "type": "string"}, {"name": "split", "description": "train or test (80/20, stratified by archetype, seed 2026)", "type": "string"}]}
 out.mkdir(exist_ok=True)
 json.dump(meta, open(out / "dataset-metadata.json", "w"), indent=2)
 print("ok", len(sd), len(sm))

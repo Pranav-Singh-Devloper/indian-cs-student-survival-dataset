@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 : "${KAGGLE_USER:?set KAGGLE_USER to your Kaggle username}"
 STAGE=kaggle_stage; rm -rf "$STAGE"; mkdir "$STAGE"
-cp data/students.csv data/semester_records.csv DATA_DICTIONARY.md src/generate_dataset.py "$STAGE"/
+cp data/students.csv data/semester_records.csv data/splits.csv challenges/CHALLENGES.md DATA_DICTIONARY.md src/generate_dataset.py "$STAGE"/
 python3 publish/build_metadata.py "$KAGGLE_USER" "$STAGE"
 if [ "${1:-new}" = "new" ]; then
   kaggle datasets create -p "$STAGE" --dir-mode zip
