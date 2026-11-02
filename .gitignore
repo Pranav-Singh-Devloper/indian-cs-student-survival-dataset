@@ -5,3 +5,6 @@ __pycache__/
 .env
 kaggle.json
 hf_stage/
+hf_space_stage/
+kaggle_stage/
+app/students.csv
