@@ -1,5 +1,7 @@
 # 🎒 Desi CS Student Survival Dataset
 
+[![License: CC0](https://img.shields.io/badge/license-CC0--1.0-blue)](LICENSE) [![Kaggle](https://img.shields.io/badge/Kaggle-dataset-20BEFF?logo=kaggle)](https://www.kaggle.com/datasets/pranavsinghdeveloper/desi-cs-student-survival) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-dataset-yellow)](https://huggingface.co/datasets/pranav-singh-developer-1/desi-cs-student-survival) [![Demo](https://img.shields.io/badge/demo-Will%20I%20get%20placed%3F-orange)](https://huggingface.co/spaces/pranav-singh-developer-1/will-i-get-placed) ![Synthetic](https://img.shields.io/badge/data-100%25%20synthetic-success)
+
 > *A synthetic, funny, quirky and painfully relatable dataset about life as an Indian Computer Science student — hostel, mess, bunking, backlogs, LeetCode guilt, CGPA anxiety and placement season.*
 
 **10,000 students · 59 features · 7 hidden personas · 8 semesters of history · free-text mess reviews & bunk excuses**
@@ -14,9 +16,13 @@ Built so you can practise **almost the entire classical ML syllabus** on data th
 |---|---|---|
 | [`data/students.csv`](data/students.csv) | 10,000 | One row per student: background, habits, mess, skills, mental health, placement |
 | [`data/semester_records.csv`](data/semester_records.csv) | 48,876 | Long-format SGPA / backlogs / attendance per semester |
+| [`data/splits.csv`](data/splits.csv) | 10,000 | Fixed 80/20 train/test split for fair comparison |
 | [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md) | | Every column explained + leakage warnings |
 | [`src/generate_dataset.py`](src/generate_dataset.py) | | Seeded generator (`seed=42`), fully reproducible |
 | [`examples/quickstart.py`](examples/quickstart.py) | | Baselines for every task below |
+| [`challenges/`](challenges/CHALLENGES.md) | | 7 challenges + evaluator + leaderboard 🏆 |
+| [`app/`](app/app.py) | | Streamlit demo: *Will I get placed?* |
+| [`notebooks/kaggle/`](notebooks/kaggle) | | 5 notebooks: quickstart, placement, personas, NLP, time series |
 
 ## The story behind the numbers
 
@@ -58,6 +64,10 @@ Every student is one of 7 archetypes — 📚 `library_topper`, 🛌 `backbench_
 | Recover 7 personas | K-Means (k=7) | ARI 0.172 *(hard on purpose — beat it!)* |
 | Mess review → rating | TF-IDF + Ridge | R² 0.752 |
 | Bunk excuse → persona | TF-IDF + LogReg | accuracy 0.73 |
+
+## 🏆 Challenges
+
+Seven tasks with a fixed split, an evaluator and a leaderboard — see [`challenges/CHALLENGES.md`](challenges/CHALLENGES.md). Can you beat K-Means at finding the 7 personas (ARI 0.173)? Can you predict placement better than ROC-AUC 0.846?
 
 ## Quick start
 
